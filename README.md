@@ -1,2 +1,9 @@
-# Fixed-Income-Valuation
+# Fixed Income Valuation
+
 Numerical methods for valuing fixed income securities: bonds, swaps, options, etc.
+
+Caps, floors, collars. Swaps, swaptions, etc. Bonds, bond options, etc. 
+
+## Fixed Income Risk 
+
+Duration, convexity, spreads, spead duration, key rate duration, etc. 
