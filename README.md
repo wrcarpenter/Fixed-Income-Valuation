@@ -6,6 +6,14 @@ Numerical methods for valuing fixed income securities: bonds, swaps, options, et
 
 Caps, floors, collars. Swaps, swaptions, etc. Bonds, bond options, etc. 
 
-## Fixed Income Risk 
+## Bond Pricing 
+
+## Bond Option Pricing 
+
+## Swap Pricing
+
+## Cap & Floor Pricing 
+
+## Evaluating Risk
 
 Duration, convexity, spreads, spead duration, key rate duration, etc. 
