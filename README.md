@@ -20,8 +20,7 @@ Macaulay duration, modified duration, 'dirty duration.'
 
 Duration, convexity, spreads, spead duration, key rate duration, etc.
 
-
 ## References
-
 "The Handbook of Mortgage-backed Securities" 6th Edition, Frank J. Fabozzi </br>
-hi
+"Fixed Income Finance: A Quantitative Approach" Mark Wise, Vineer Bhansali </br> 
+"Interest Rate Models: Theory and Practice" 2nd Edition, Damiano Brigo, Fabio Mercurio 
