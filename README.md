@@ -6,6 +6,16 @@ Numerical methods for valuing fixed income securities: bonds, swaps, options, et
 
 Caps, floors, collars. Swaps, swaptions, etc. Bonds, bond options, etc. 
 
+## Work on First
+
+Getting rate data for pricing 
+
+Bond Pricing / generating cash flows 
+
+Duration: Macaulay, Modified, Effective, etc. 
+
+
+
 ## Bond Pricing 
 
 ## Bond Option Pricing 
