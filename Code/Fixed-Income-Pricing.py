@@ -1,6 +1,12 @@
 """
-Fixed Income Pricing
-W.Carpenter
+Interest Rate Models 
+
+Author: William Carpenter
+
+Objective: Create a binomial tree interest rate model that takes as arguments
+todays forward curve and volatilities. Use the tree to price various bonds and 
+other fixed income derivatives (caps, floors, swaps, etc.).
+
 """
 import sys
 import os
@@ -19,8 +25,8 @@ import seaborn as sns
 import pandas as pd
 
 #%%
-# Reading in interest rate tree data for testing 
 
+# Reading in interest rate tree data for testing 
 one_period_tree = np.array([[0.0168, 0.0433, np.nan], 
                             [np.nan, 0.0120, np.nan], 
                             [np.nan, np.nan, np.nan]]) 
@@ -50,8 +56,7 @@ collar  = lambda x: 0
 bond    = lambda x: x
 
 # Asset Cash Flow Functions
-
-# Every agrument takes in a row,col,rate, notional argument but doesn't necessarily use it lol
+# Every agrument takes in a row,col,rate, notional argument but doesn't necessarily use it
 cap_cf   = lambda (rate, strike, delta, notion, cpn): exp(-1*rate*delta)*delta*notion*max(rate-strike,0)
 floor_cf = lambda (rate, strike, delta, notion, cpn): exp(-1*rate*delta)*delta*notion*max(strike-rate,0)
 swap_cf  = lambda (rate, strike, delta, notion, cpn): exp(-1*rate)delta)*delta*notion(rate - strike)
@@ -61,7 +66,7 @@ zcb_ cf  = lambda (rate, strike, delta, notion, cpn): 0
 # cap, floor, collar
 # swap 
  
-# Print Helper function 
+# Print helper function 
 def display(arr):
   for i in arr:
     for j in i:
@@ -69,6 +74,7 @@ def display(arr):
     print() 
   print("\n")
 
+# Defining tree probabilities 
 def probTree(length):
     prob = np.zeros((length, length))
     prob[np.triu_indices(length, 0)] = 1/2
